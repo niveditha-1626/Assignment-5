@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Moon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>The Moon</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About the Moon</a></li>
+        <li><a href="#audio">Moon Audio</a></li>
+        <li><a href="#comments">Comments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Introduction</h2>
+      <p>From lighting up our skies to preserving evidence of our solar system’s history, Earth’s closest neighbor plays a pivotal role in the study of our planet and beyond.</p>
+      
+      <h3>Features of the Moon</h3>
+      <p>It has no atmosphere, experiences extreme temperatures, and is responsible for Earth's ocean tides.Earth's Moon has no moons of its own.</p>
+
+      <img src="moon.jpeg" alt="Full moon with visible craters against a dark night sky" />
+
+      <table aria-describedby="moon-table-summary">
+        <caption id="moon-table-summary">Key Facts About the Moon</caption>
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Diameter</th>
+            <td>3,474 km</td>
+          </tr>
+          <tr>
+            <th scope="row">Distance from Earth</th>
+            <td>384,400 km</td>
+          </tr>
+          <tr>
+            <th scope="row">Gravity</th>
+            <td>1.62 m/s²</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="audio">
+        <h2>Moon Audio</h2>
+        <audio controls>
+          <source src="audio/moon.mp3.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element. 
+          <a href="audio/moon.mp3.mp3">Download the audio file</a>.
+        </audio>
+        <details>
+          <summary>Transcript</summary>
+          <p>This ambient audio track features calm, space-inspired music that evokes the silence and mystery of the Moon. It is ideal for creating a relaxing, cosmic atmosphere as you explore lunar facts.</p>
+        </details>
+      </section>
+      
+
+    <section id="comments">
+      <h2>Leave a Comment</h2>
+      <form aria-label="Comment Form">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" />
+
+        <label for="comment">Comment:</label>
+        <input type="text" id="comment" name="comment" />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <button id="toggle-comments" aria-pressed="false">Show/Hide Comments</button>
+      <div id="comment-section" hidden>
+        <p>User1: The Moon is so fascinating!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Space Explorers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
